@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:background="@color/colorPrimary"
+    android:layout_height="match_parent"
+    tools:context=".activities.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ShortMe"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        android:textColor="@color/orange"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Place URL here"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textColor="@color/orange"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter URL"
+            android:background="@color/white"
+            android:id="@+id/url"
+            android:padding="20dp"
+            android:layout_margin="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Place Custom Ending here"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textColor="@color/orange"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter URL"
+            android:id="@+id/custom_end"
+            android:background="@color/white"
+            android:padding="20dp"
+            android:layout_margin="20dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/go_button"
+            android:layout_gravity="center"
+            android:text="GO!"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/orange"
+            android:textAlignment="center"
+            android:visibility="invisible"
+            android:layout_marginTop="10dp"
+            android:id="@+id/generated_text"
+            android:textSize="20sp"
+            android:text="Your generated URL is :"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:visibility="invisible"
+            android:clickable="false"
+            android:id="@+id/short_url"
+            android:textSize="20sp"
+            android:text="https://www.bp.gc.in"/>
+    </LinearLayout>
+
+</LinearLayout>
